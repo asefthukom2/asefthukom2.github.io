@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+              url("../images/cover.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #93c5fd;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 15px;
+}
+
+.project {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.project img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+
+.project-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.project-content span {
+  display: inline-block;
+  margin-top: 15px;
+  color: #93c5fd;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #020617;
+  color: #94a3b8;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
